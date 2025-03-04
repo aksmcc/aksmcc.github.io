@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>易原五金行:::昭原企業有限公司</title>
+<meta description="專業銷售日本西德鎢鋼鉅片，製造研磨日本電腦自動研磨" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery.ui.all.css" type="text/css"/> 
+<script type="text/javascript">
+    var $deg = 0; var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+    $(function () {
+        $(".banner-pic").hide().show("slide", "left", 1000);
+        setInterval(function () { $("#saw").css('transform', 'rotate(' + $deg + 'deg)'); $deg += 10; }, 1000 / 60);
+        $str_frame = "";
+        for ($i = 1; $i <= 30; $i++) {
+            $str_frame += "<div class=\"content2-frame\"><div class=\"content2-pic\"><img src=\"images/product/pic"+$i+".jpg\" /></div><div class=\"content2-text\">產品說明</div></div>";
+        }
+        $(".content2-ingredient").html($str_frame);
+    });
+    function act(e) {
+        $(".menu ul li span").removeClass("active");
+        $(e).addClass("active");
+
+        switch (e.attr("id")) {
+            case "about":
+                $("body,html,document").animate({ scrollTop: 0 }, 300);
+                break;
+            case "service":
+                $("body,html,document").animate({ scrollTop: 238 }, 300);
+                break;
+            case "product":
+                $("body,html,document").animate({ scrollTop: 583 }, 300);
+                break;
+            case "contact":
+                $scr = 583 + parseInt($(".content2").css("height").replace("px", "")) + 15;
+                $("body,html,document").animate({ scrollTop: $scr }, 300);
+                break;
+        }
+    }
+    
+</script>
+</head>
+
+<body>
+<div id="warp">
+    <div class="head">
+         <div class="head-top"></div>
+         <div class="head-bottom">
+              <div class="logo">
+                   <img src="images/logo.png" style="width:130px;" />
+              </div>
+              <div class="menu">
+                   <p>
+                       專業銷售日本西德鎢鋼鉅片，製造研磨日本電腦自動研磨<br />
+                       日本瑞典帶鋸鋸磨點鋼帶鋸木工五金鋸片製造框鋸鋸條
+                   </p>
+                   <ul>
+                       <li><span id="about" class="active" onclick="act($(this))">關於易原五金行</span></li>
+                       <li><span id="service" class="" onclick="act($(this))">服務項目</span></li>
+                       <li><span id="product" class="" onclick="act($(this))">產品介紹</span></li>
+                       <li><span id="contact" class="" onclick="act($(this))">聯絡我們</span></li>
+                   </ul>
+              </div>
+              <div style="clear:both"></div>
+         </div>
+    </div>
+    <div class="banner">
+         <div class="banner-pic"><div id="saw"></div></div>
+         <div class="banner-text">
+              <h3>易原五金行</h3>
+              <H4>昭原企業有限公司</H4>
+              <p>易原公司在台灣已經成立四十幾年，目前公司生產鋸片包括台灣進口自製鋸片，框鋸鋸片，日本進口鋸片，各種特殊鋸片可訂做，翻新鋸片（換片） ，進口帶鋸，指接刀，進口鑽石砂輪，刨刀。自製鋸片，框鋸鋸片（線鋸片）除了一般規格，也非常歡迎貴公司訂作。我公司將以最快的速度，最優良的品質來完成交易。
+        公司現新增機械設備生産制造，主營木薄片拼接機，是專爲家具、門板及裝飾合板用木薄片拼接而設計，是結合我司下屬家私廠幾十年使用經驗與機械廠共同設計制造，是傳統與科學的诠釋，是使用者與制造者的結晶，是投資者最貼心的設備.</p>
+         </div>
+         <div style="clear:both"></div>
+    </div>      
+    <div class="content">
+         <div class="content1">
+             <div class="tit-blue">
+                <p>服務項目</p>
+             </div>
+             <div class="content1-pic"><p>專業銷售日本西德鎢鋼鉅片，製造研磨日本電腦自動研磨<br />日本瑞典帶鋸鋸磨點鋼帶鋸木工五金鋸片製造框鋸鋸條 </p></div>
+         </div>
+        <div class="content2">
+             <div class="tit-yellow">
+                <p>產品介紹</p>
+                <span><a href="#">MORE</a></span>
+             </div>
+             <div class="content2-ingredient">
+             </div>
+         </div>
+        <div class="content3">
+             <div class="tit-bblue">
+                <p>聯絡我們</p>
+             </div>
+             <div class="content3-pic"></div>
+            <div class="content3-text"><h1>易原五金行:</h1> 台中市豐原區豐東路220巷15號<br />TEL: (04) 25242772 or (04) 25269769<br />FAX: (04) 25253827<br />手機: 0986-070418<br /></div>
+            <div class="content3-text"><h1>昭原企業有限公司:</h1> 台中市豐原區豐東路220巷15號<br />統一編號: 84249552</div>
+         </div>
+      <div style="clear:both"></div>
+    </div>
+    <div class="foot">© 2013 昭原企業有限公司 All Rights Reserved   </div>
+</div>
+</body>
+</html>

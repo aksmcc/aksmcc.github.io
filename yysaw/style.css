@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{ background:#363f4b url(images/bg.png) repeat; margin:0; padding:0; color:#fff; width:100%; height:auto; font-family:Arial, Helvetica, sans-serif;  line-height:20px;}
+
+#warp{ width:100%; height:auto;}
+.head{ background:#000;  height:153px; width:100%; position:fixed; top:0; z-index:10;}
+.head-top{ height:21px; width:970px; margin:0 auto; padding:0; text-align:right; padding-right:10px;}
+.head-top a{ color:#fff; text-decoration:none; padding:0 10px;font-size:11px;}
+.head-top a:hover{ color:#fff; text-decoration:underline;}
+.head-bottom{ height:132px; width:980px; margin:0 auto; padding:0; background:#336699}
+.logo{ height:48px; width:335px; float:left; padding:12px 0 42px 55px;}
+h1{ margin:0; padding:0; font-size:41px; font-weight:bold;}
+h2{ margin:0; padding:3px 0 0 3px; font-weight:lighter;font-size:12px;}
+.menu{ height:102px; float:right; padding: 30px 23px 0 0; text-align:right;}
+.menu p { margin:0; padding:0 0 30px 0;font-size:11px;}
+.menu ul{ margin:0; padding:0; list-style:none; height:21px; font-size:12px;}
+.menu ul li{ float:left; margin:0 3px 0 0 ; width:91px; height:21px; background: rgba(0,0,0,0.2);border-radius:5px 5px 0 0; padding:0; text-align:center;}
+.menu ul li span{ color:#fff; text-decoration:none; cursor:pointer;}
+.menu ul li span:hover{ color:#b8e3ff; text-decoration:underline;}
+.menu ul li span.active{ color:#b8e3ff; text-decoration:underline;}
+
+.banner{ width:980px; margin:0 auto; margin-top:153px; height:223px; 
+         background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#c2c2c2)); 
+         background: -moz-linear-gradient(top, #fff, #c2c2c2); 
+         filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr=#ffffff, endColorstr=#c2c2c2);
+         background: -o-linear-gradient(top, #fff, #c2c2c2);}
+.banner-pic{ float:left; width:498px; height:223px; overflow:hidden;}
+#saw{ background:url(images/saw.png) no-repeat; width:444px; height:435px; padding-top:5px;}
+.banner-text{ float:right; width:455px; padding:50px 15px 0 10px;}
+h3{ font-size:20px; color:#000; font-weight:lighter; margin:0; padding:0;}
+h4{ font-size:35px; color:#000; margin:0; padding:0; line-height:50px;}
+.banner-text p{ margin:0; margin:0; line-height:14px; color:#58617f; font-size:11px;}
+
+.content{ height:auto; width:950px; margin:0 auto; padding:15px 15px 30px 15px; background:#FFF;}
+.content1{ float:left; width:inherit; height:auto; margin-bottom:15px;}
+.tit-blue{ height:30px; background:#336699; padding:0 15px;  font-size:11px;line-height:25px;}
+.tit-blue p{ margin:0; padding:0; float:left; font-weight:bold;color:#fff;font-size:20px; }
+.tit-blue span{ margin:0; padding:0; float:right; display:block; font-size:9px;color:#fff;}
+.tit-blue a{ color:#fff; text-decoration:none;}
+
+.tit-yellow{ height:30px; background:#FFCC66; padding:0 15px;  font-size:11px;line-height:25px;}
+.tit-yellow p{ margin:0; padding:0; float:left; font-weight:bold;color:#fff;font-size:20px; }
+.tit-yellow span{ margin:0; padding:0; float:right; display:block; font-size:9px;color:#fff;}
+.tit-yellow a{ color:#fff; text-decoration:none;}
+
+.tit-bblue{ height:30px; background:#003366; padding:0 15px;  font-size:11px;line-height:25px;}
+.tit-bblue p{ margin:0; padding:0; float:left; font-weight:bold;color:#fff;font-size:20px; }
+.tit-bblue span{ margin:0; padding:0; float:right; display:block; font-size:9px;color:#fff;}
+.tit-bblue a{ color:#fff; text-decoration:none;}
+
+.content1-pic {background:url(images/worker.jpg) no-repeat;width:auto;height:300px;}
+.content1-pic p {float:right; color:black; font:bold 24px; width:300px;line-height:30px;}
+
+
+.content2{ float:left; width:inherit; height:auto; margin-bottom:15px;}
+.content2-ingredient{width:inherit;height:auto;}
+.content2-frame { float:left; width:120px; height:160px; margin:13px; padding:5px; box-shadow:rgba(0,0,0,0.3) 0 0 5px 1px;}
+.content2-pic { width:100px; height:100px; margin:0 auto; }
+.content2-pic img { width:100px; height:100px;}
+.content2-text{margin:10px; color:rgba(0,0,0,0.2);font-size:12px;}
+
+.content3{ float:left; width:inherit; height:auto; margin-bottom:15px;}
+.content3-pic {background:url(images/confidence.jpg) no-repeat center;width:auto;height:350px;}
+.content3-text{float:left; margin:0 50px; margin-top:15px; color:black; }
+.content3-text h1{font-size:20px;line-height:30px;}
+.foot{ height:73px; width:980px; background:#d1d0d2; margin:0 auto; padding:15px 0 0 0;border-top:1px solid #009fd8; text-align:center; color:#58595b; font-size:11px;}
