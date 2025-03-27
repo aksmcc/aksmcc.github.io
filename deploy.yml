@@ -3,11 +3,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          submodules: 'true'
+      - name: Change Git Submodule URL
+        run: |
+          git config --global url."git@github.com:".insteadOf "https://github.com/"
+
+      - name: Sync Submodules
+        run: |
+          git submodule sync --recursive
+          git submodule update --init --force --depth=1 --recursive
