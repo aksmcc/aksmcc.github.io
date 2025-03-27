@@ -1,3 +1,3 @@
 [submodule "ksu-tep"]
 	path = ksu-tep
-	url = https://github.com/aksmcc/ksu-tep.git
+	url = git@github.com:aksmcc/ksu-tep.git
